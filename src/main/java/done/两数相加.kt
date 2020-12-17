@@ -21,10 +21,11 @@
  *     var next: ListNode? = null
  * }
  */
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
 class 两数相加 {
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
+
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
         var carry = 0
         val result = ListNode(0)
