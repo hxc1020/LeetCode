@@ -13,7 +13,7 @@ public class 滑动窗口最大值 {
         LinkedList<Integer> list = new LinkedList<>();
         int[] res = new int[arr.length - win + 1];
         for (int i = 0; i < arr.length; i++) {
-            while (!list.isEmpty() && arr[list.getLast()] < arr[i]) {
+            while (!list.isEmpty() && arr[list.getLast()] <= arr[i]) {
                 list.removeLast();
             }
             list.addLast(i);
